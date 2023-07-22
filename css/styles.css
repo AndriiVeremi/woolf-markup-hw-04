@@ -6,6 +6,7 @@
   --ocean: #404bbf;
   --cloud: #f4f4fd;
   --cornflower: #e7e9fc;
+  --lightslate: #8e8f99;
 }
 
 /* Reset Styles */
@@ -73,7 +74,7 @@ a {
 
 .header {
   background-color: var(--white);
-  border-bottom: 1px solid var(--cornflower, #E7E9FC);
+  border-bottom: 1px solid var(--cornflower, #e7e9fc);
 }
 
 .header-nav {
@@ -197,6 +198,16 @@ a {
   width: 264px;
 }
 
+.info-image {
+  display: flex;
+  justify-content: center;
+  height: 112px;
+  align-items: center;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  background-color: var(--cloud);
+}
+
 .info-title {
   color: var(--navyblue);
   font-size: 20px;
@@ -249,10 +260,9 @@ a {
 
 .team-item {
   background-color: var(--white);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-  0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-  0px 1px 6px 0px rgba(46, 47, 66, 0.08);
-border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-description {
@@ -274,6 +284,78 @@ border-radius: 0px 0px 4px 4px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
+  margin-bottom: 8px;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+}
+
+.social-item {
+  height: 40px;
+  width: 40px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: var(--iris);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--ocean);
+}
+
+.social-icon {
+  fill: var(--cloud);
+}
+
+/* Кліенти */
+
+.customers {
+  padding: 120px 0;
+}
+
+.customers-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.customers-item {
+  height: 88px;
+  width: 168px;
+}
+
+.customers-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--lightslate);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--lightslate);
+  fill: currentColor;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  fill: var(--ocean);
+  border-color: var(--ocean);
+  color: var(--ocean);
 }
 
 /* Підвал */
@@ -337,8 +419,8 @@ border-radius: 0px 0px 4px 4px;
 .menu-btn:focus {
   color: var(--white);
   background-color: var(--ocean);
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
-    0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.08),
+    0px 3px 1px 0px rgba(0, 0, 0, 0.1);
   border: 1px solid transparent;
 }
 
