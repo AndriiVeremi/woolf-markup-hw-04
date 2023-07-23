@@ -5,11 +5,11 @@
   --iris: #4d5ae5;
   --ocean: #404bbf;
   --cloud: #f4f4fd;
-  --cornflower: #E7E9FC;
+  --cornflower: #e7e9fc;
   --lightslate: #8e8f99;
   --green: #31d0aa;
   --navyblue-modal: rgba(46, 47, 66, 0.4);
-  --dairy: #fcfcfc; 
+  --dairy: #fcfcfc;
 }
 
 /* Reset Styles */
@@ -154,9 +154,6 @@ a {
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
     url('../images/hero.jpg');
   background-color: var(--navyblue);
-  /* background-position: center; */
-  /* background-repeat: no-repeat; */
-  /* background-size: cover; */
 }
 
 .hero-title {
@@ -556,8 +553,6 @@ a {
 
 /* Модалка */
 
-/* СТИЛІ МОДАЛЬНОГО ВІКНА */
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -582,8 +577,8 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
+  width: 408px;
+  height: 584px;
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
@@ -594,20 +589,23 @@ a {
 
 .madal-btn {
   display: flex;
-  background-color: #ffffff;
-  background-image: url(../images/close-black.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
   border-radius: 50%;
-  cursor: pointer;
-  height: 30px;
-  width: 30px;
-  margin-left: 490px;
-  margin-top: 8px;
-
-
-  fill: var(--cornflower);
-stroke-width: 1px;
-stroke: rgba(0, 0, 0, 0.10);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--cornflower);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.madal-btn:hover,
+.madal-btn:focus {
+  background-color: var(--ocean);
+  fill: var(--white);
+}
+
